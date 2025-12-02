@@ -30,3 +30,76 @@
 //   return null;
 // }
 // console.log(calculateChars("aaaaa"));
+
+// 3. Reverse a String
+
+// Task: Reverse a string without using .reverse().
+// Example: "abc" → "cba"
+
+//ფორ ლუპში საწყისი წერტილი არის სტრინგის ბოლო სიმბოლო რომელიც სათითაოდ მოდის უკან და უკან,ჩვენ კიდევ ამ ყველასფერს ვაკონსოლებთ
+
+// function reverseString(str) {
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     console.log(str[i]);
+//   }
+// }
+// reverseString("abc");
+
+// 4. Find Max in Array
+
+// Task: Return the largest number in an array.
+// Example: [4, 1, 9] → 9
+
+//მასივს ვსორტავთ პირველ რიგში რათა ზრდადობის მიხედვით დავაყენოთ მასივის წევრები და შემდეგ ვარეთარნებთ ბოლო ელემენტს რადგან ის აუცულებლად ყველაზზე დიდი იქნება
+
+// function findMaxNumberInTheArray(array) {
+//   const sortedArray = array.sort((a, b) => a - b);
+//   const maxNumber = sortedArray[sortedArray.length - 1];
+//   return maxNumber;
+// }
+// console.log(findMaxNumberInTheArray([4, 1, 9]));
+
+// 5. Check Palindrome
+
+// Task: Return true/false if a string reads the same forward/backward.
+// Example: "level" → true
+
+//პირველ რიგში ვატრიალებთ სტრინგს უკუღმა როგორც მესამე დავალებაში გავაკეთეთ,შემდეგ მიღებულ შემოტრიალებულ სტრინგს ვადარებთ თავდაპირბელ ვარიანტს,თუ დაემთხვა ვარეთარნებთ თრუს თუ არადა ფოლსს
+
+// function isPalindrome(str) {
+//   let reversed = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed = reversed + str[i];
+//   }
+//   if (reversed === str) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isPalindrome("asd"));
+
+// 6. FizzBuzz
+
+// Task: For numbers 1–n:
+
+// print "Fizz" if divisible by 3
+
+// "Buzz" if divisible by 5
+
+// "FizzBuzz" if both
+
+// otherwise print the number
+
+// function devidableNumbers(n) {
+//   if (n % 3 === 0 && n % 5 === 0) {
+//     console.log("FizzBuzz");
+//   } else if (n % 3 === 0) {
+//     console.log("Fizz");
+//   } else if (n % 5 === 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log("not devidable 3 or 5");
+//   }
+// }
+// devidableNumbers(21);
