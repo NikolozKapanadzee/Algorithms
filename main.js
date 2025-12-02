@@ -17,5 +17,16 @@
 // Task: Given a string and a character, return how many times that character appears.
 // Example: "hello", 'l' → 2
 
-function calculateChars(char) {}
-calculateChars("hello");
+//ვქმნით ორ ციკლს,ერთი გადაუვლის ჩვენს სტრინგს,მეორეც გადაუვლის მაგრამ იწყებს ერთით წინ,ადარებს წინა ასოს თუ ედრება მომდევნო ასო,თუ ედრება არეთარნებს და თუ არაფერი ედრება ნალს აბრუნებს
+
+// function calculateChars(str) {
+//   for (let i = 0; i < str.length; i++) {
+//     for (let j = i + 1; j < str.length; j++) {
+//       if (str[i] === str[j]) {
+//         return str[i];
+//       }
+//     }
+//   }
+//   return null;
+// }
+// console.log(calculateChars("aaaaa"));
