@@ -99,7 +99,45 @@
 //   } else if (n % 5 === 0) {
 //     console.log("Buzz");
 //   } else {
-//     console.log("not devidable 3 or 5");
+//     console.log(n);
 //   }
 // }
-// devidableNumbers(21);
+// devidableNumbers(23);
+
+// 7. Remove Duplicates from Array
+
+// Task: Given an array, remove duplicates and return a new array.
+// Example: [1, 1, 2, 3] → [1, 2, 3]
+
+// function removeDuplicatesFromArray(array) {
+//   return array.filter((item, index) => array.indexOf(item) === index);
+// }
+// console.log(removeDuplicatesFromArray([1, 2, 2, 3, 4]));
+
+// 8. Find the First Non-Repeating Character
+
+// Task: Given a string, return the first character that appears only once.
+// Example: "aabbcde" → "c"
+
+// function firstNonRepeatingCharacter(str) {
+//   let chars = str.split("");
+//   let nonRepeat = chars.filter(
+//     (char) => str.indexOf(char) === str.lastIndexOf(char)
+//   );
+//   return nonRepeat[0];
+// }
+// console.log(firstNonRepeatingCharacter("aabbucde"));
+
+// 9. Factorial (Recursive or Loop)
+
+// Task: Write a function that returns n! (factorial).
+// Example: 5! = 120
+
+// function calculateFactorial(n) {
+//   let res = 1;
+//   for (let i = 1; i <= 5; i++) {
+//     res *= i;
+//   }
+//   return res;
+// }
+// console.log(calculateFactorial(5));
