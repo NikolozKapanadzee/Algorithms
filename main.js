@@ -141,3 +141,55 @@
 //   return res;
 // }
 // console.log(calculateFactorial(5));
+
+// 10. Merge Two Sorted Arrays
+
+// Task: You are given two sorted arrays. Return a single sorted array without using .sort().
+// Example: [1,3,5] + [2,4,6] → [1,2,3,4,5,6]
+
+//აქ გავიჭედე ამას უნდა მოვუბრუნდე                                                                   ?????????????????????????????????????????????????????????????
+
+// function mergeTwoArrays(arr1, arr2) {
+//   let finalArr = [...arr1, ...arr2];
+//   return finalArr;
+// }
+// console.log(mergeTwoArrays([1, 3, 5], [2, 4, 6]));
+
+// 11. Two Sum
+
+// Task: Given an array and a target number, return the indices of the two numbers that add up to the target.
+// Example: [2,7,11,15], target = 9 → [0,1]
+//ვატრიალებთ ჩვეულებრივად ფორ ლუპს და შიგნით ვქმნით მეორე ლუპს რომელის საწყისი წერტილი იქნება წინა ლუპის პირველი ელემენტის მომდევნო,ვუმატებთ ერტმანეთს და ვადარებთ თუ უდრის თარგეთს,თუ უდრის გამოგვაქვს ინდექსები,თუ არადა ვაბრუნებთ ნალს
+
+// function findIndexOfTargetNumber(array, target) {
+//   for (let i = 0; i < array.length; i++) {
+//     for (let k = i + 1; k < array.length; k++) {
+//       if (array[i] + array[k] === target) {
+//         return [i, k];
+//       }
+//     }
+//   }
+//   return null;
+// }
+// console.log(findIndexOfTargetNumber([2, 8, 7, 1], 9));
+
+// 12. Check Anagrams
+
+// Task: Given two strings, return true if they are anagrams (same letters, different order).
+// Example: "listen", "silent" → true
+
+//ორივე სტრინგი გადავიყვანოთ მასივად,დავსორტოთ ანბანის მიხედვით და შემდეგ შევაწებოთ ერთმანეთს,თუ ეს ორივე სტრინგი ერთმანეთს დაემთხვა თრუა,თუ არა ფოლსი
+
+// function checkAnagrams(str1, str2) {
+//   if (str1.length !== str2.length) {
+//     return false;
+//   }
+//   const sortedStr1 = str1.split("").sort().join("");
+//   const sortedStr2 = str2.split("").sort().join("");
+//   if (sortedStr1 === sortedStr2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(checkAnagrams("listen", "silent"));
