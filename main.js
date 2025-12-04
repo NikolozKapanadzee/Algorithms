@@ -193,3 +193,25 @@
 //   }
 // }
 // console.log(checkAnagrams("listen", "silent"));
+
+// 13. Find Missing Number
+
+// Task: An array contains numbers from 1 to n except one. Find which number is missing.
+// Example: [1,2,4,5] → 3
+
+//ვიპოვე ჯერ მასივის რიცხვების ახლანდელი ჯამი,შემდეგ ვიპოვე ამდენი უნდა ყოფილიყო დაკლებული რიცხვის გარეშე და სხვაობა დავარეთარნე
+
+// function findMissingNumber(array) {
+//   let expectedSum = 0;
+//   let currentSum = 0;
+//   let sortedArray = array.sort((a, b) => a - b);
+//   for (let i = 0; i < sortedArray.length; i++) {
+//     currentSum += sortedArray[i];
+//   }
+//   for (let k = 0; k <= sortedArray.length + 1; k++) {
+//     expectedSum += k;
+//   }
+
+//   return expectedSum - currentSum;
+// }
+// console.log(findMissingNumber([1, 2, 3, 5, 6]));
