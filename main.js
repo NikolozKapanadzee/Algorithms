@@ -215,3 +215,37 @@
 //   return expectedSum - currentSum;
 // }
 // console.log(findMissingNumber([1, 2, 3, 5, 6]));
+
+// 14. Count Vowels
+
+// Task: Given a string, return how many vowels are inside (a e i o u).
+// Example: "hello" → 2
+
+// function countVowels(str) {
+//   let cnt = 0;
+//   const vowels = ["a", "e", "i", "o", "u"];
+//   for (let i = 0; i < str.length; i++) {
+//     if (vowels.includes(str[i])) {
+//       cnt += 1;
+//     }
+//   }
+//   return cnt;
+// }
+// console.log(countVowels("hello"));
+
+// 15. Find Intersection of Two Arrays
+
+// Task: Given two arrays, return the common elements.
+// Example: [1,2,3] & [2,3,4] → [2,3]
+
+function commonElements(arr1, arr2) {
+  let finalArr = [...arr1, ...arr2];
+  let commonElements = finalArr.filter(
+    (el) => finalArr.indexOf(el) !== finalArr.lastIndexOf(el)
+  );
+  let finalCommonElements = commonElements.filter(
+    (el, index) => commonElements.indexOf(el) === index
+  );
+  console.log(finalCommonElements);
+}
+commonElements([1, 2, 3], [2, 3, 4]);
