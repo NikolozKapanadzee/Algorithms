@@ -238,14 +238,45 @@
 // Task: Given two arrays, return the common elements.
 // Example: [1,2,3] & [2,3,4] → [2,3]
 
-function commonElements(arr1, arr2) {
-  let finalArr = [...arr1, ...arr2];
-  let commonElements = finalArr.filter(
-    (el) => finalArr.indexOf(el) !== finalArr.lastIndexOf(el)
-  );
-  let finalCommonElements = commonElements.filter(
-    (el, index) => commonElements.indexOf(el) === index
-  );
-  console.log(finalCommonElements);
-}
-commonElements([1, 2, 3], [2, 3, 4]);
+// function commonElements(arr1, arr2) {
+//   let finalArr = [...arr1, ...arr2];
+//   let commonElements = finalArr.filter(
+//     (el) => finalArr.indexOf(el) !== finalArr.lastIndexOf(el)
+//   );
+//   let finalCommonElements = commonElements.filter(
+//     (el, index) => commonElements.indexOf(el) === index
+//   );
+//   console.log(finalCommonElements);
+// }
+// commonElements([1, 2, 3], [2, 3, 4]);
+
+// 16. Balanced Brackets
+
+// Task: Given a string containing brackets ()[]{}, check if they are balanced.
+// Example: "([{}])" → true
+// ეს დასაწერია                                                                                         ?????????????????????????????????????????????????????????????
+
+// 17. Remove All Spaces
+
+// Task: Given a string, return a new one with all spaces removed.
+// Example: "a b c" → "abc"
+
+// function removeAllSpaces(str) {
+//   let finalVersion = str.replaceAll(" ", "");
+//   return finalVersion;
+// }
+// console.log(removeAllSpaces("a b c"));
+
+// 18. Find Longest Word in a Sentence
+
+// Task: Return the longest word.
+// Example: "Backend developers rock" → "developers"
+
+//დავსპლიტოთ სტრინგი და შევქმნათ მასივი,ეს მასივი დავსორტოთ სიგრძის მიხედვით(ყველაზე დიდიდან დაბლა) და ამოვიღოთ მასივის პირველი ელემენტი
+
+// function findTheLongestWord(str) {
+//   let splitedStringToWords = str.split(" ");
+//   let longestWord = splitedStringToWords.sort((a, b) => b.length - a.length)[0];
+//   console.log(longestWord);
+// }
+// findTheLongestWord("Backend Developers Rock");
