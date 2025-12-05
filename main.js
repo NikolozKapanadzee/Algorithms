@@ -300,3 +300,59 @@
 //   }
 // }
 // console.log(isUnique("abcdee"));
+
+// 20. Convert Array to Object of Counts
+
+// Task: Given an array, return an object that shows how many times each value appears.
+// Example:
+// Input: ["a","b","a","c","b","a"]
+// Output: { a: 3, b: 2, c: 1 }
+
+//შევქმენით ცარიელი ობიექტი,შემდეგ გადავუარეთ მასივს,თუ ცარიელ ობიექტში ამ ქით ელემენტი არსებობდა დავუმატებდით ერთს,თუ არა შევქმნიდით და 1 დავუყენებდით ხელით მნიშვნელობას
+
+// function convertArrayToObjectOfCounts(array) {
+//   let result = {};
+//   for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//     if (result[element]) {
+//       result[element] = result[element] + 1;
+//     } else {
+//       result[element] = 1;
+//     }
+//   }
+//   return result;
+// }
+// console.log(convertArrayToObjectOfCounts(["a", "b", "a", "c", "b", "a"]));
+
+// 21. Convert Number to Binary
+
+//                                                                              ?????????????????????????????????????????????????????????????????????????????????
+
+// Task: Given a non-negative integer, return its binary representation as a string.
+// Example: 5 → "101"
+
+// 22. Count Words in a Sentence
+
+// Task: Given a sentence, return how many words it contains.
+// Example: "I love backend" → 3
+
+// function countWordsInSentence(str) {
+//   return str.split(" ").length;
+// }
+// console.log(countWordsInSentence("I love backend"));
+
+// 23. Capitalize First Letter of Each Word
+
+// Task: Input: "hello world"
+// Output: "Hello World"
+
+//ჯერ დავსპლიტეთ სტრინგი და გავამასივეთ,შემდეგ გადავუარეთ მასივს ფორ ლუპით და თითოეული ელემენტის პირველი ასო ბგერა დიდი ასო გავხადეთ და ამას დავუმატეთ სიტყვის დარჩენილი ნაწილი,საბოლოოდ კი ისევ სტრინგად გადავაქციეთ დარეთარნების დროს
+
+// function capitalizeFirstLetter(str) {
+//   let splitedStr = str.split(" ");
+//   for (let i = 0; i < splitedStr.length; i++) {
+//     splitedStr[i] = splitedStr[i][0].toUpperCase() + splitedStr[i].slice(1);
+//   }
+//   return splitedStr.join(" ");
+// }
+// console.log(capitalizeFirstLetter("hello world"));
