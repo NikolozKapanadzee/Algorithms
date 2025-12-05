@@ -280,3 +280,23 @@
 //   console.log(longestWord);
 // }
 // findTheLongestWord("Backend Developers Rock");
+
+// 19. Unique Characters
+
+// Task: Given a string, return true if all characters are unique.
+// Example: "abcde" → true, "aabc" → false
+//სტრინგი დავსპლიტეთ და გავამასივეთ,შემდეგ გაფფილტრეთ და მივიღეთ ახალი მასივი რომელშიც იქნება მხოლოდ უნიკალური სიმბოლოები,თუ გაფილტრული მასივის და თავდაპირველი მასივის სიგრძე ტოლია ესეიგი ყველა უნიკალურია,თუ სხვადასხვა ზომაა ესეიგი გვქონდა არანუნიკალური სიმბოლოები და ისინი ამოვარდა მეორე მასივიდან
+
+// function isUnique(str) {
+//   let splitedStr = str.split("");
+
+//   let unique = splitedStr.filter(
+//     (el) => splitedStr.indexOf(el) === splitedStr.lastIndexOf(el)
+//   );
+//   if (unique.length === splitedStr.length) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isUnique("abcdee"));
