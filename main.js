@@ -417,3 +417,59 @@
 //   return ans;
 // }
 // console.log(removeFalsyValues([0, 1, false, 2, "", 3]));
+
+// 28. Return Middle Character(s)
+
+// Task:
+
+// If string length is odd → return 1 middle char
+
+// If even → return 2 middle chars
+// Example: "cat" → "a"
+// Example: "test" → "es"
+
+//დავსპლიტოთ ჩვენი სტრინგი,ვიპოვოთ შუარიცხვი,შემდეგ გავყოთ ორ ნაწილად,თუ კენტია გამოვაჩინოთ მეორე ნაწილის(უფრო გრძელი მეორე ნაწილი გვრჩება კენტი) პირველი ელემენტი,თუ ლუწია პირველი ნაწილის ბოლო ელემენტი და დავუმატოთ მეორე ნაწილის პირველი ელემენტი
+
+// function middleCharacters(str) {
+//   splittedStr = str.split("");
+//   let mid = Math.floor(splittedStr.length / 2);
+//   let firstHalf = splittedStr.slice(0, mid);
+//   let secondHalf = splittedStr.slice(mid);
+//   if (splittedStr.length % 2 === 1) {
+//     return secondHalf[0];
+//   } else {
+//     return firstHalf[firstHalf.length - 1] + secondHalf[0];
+//   }
+// }
+// console.log(middleCharacters("pavle"));
+
+// 29. Find Second Largest Number
+
+// Task: Return the second-largest number in an array without using .sort().
+// Example: [10, 5, 20, 8] → 10
+
+// function findSecondLargestNumber(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     for (let k = i + 1; k < array.length; k++) {
+//       if (array[i] > array[k]) {
+//         let temp = array[i];
+//         array[i] = array[k];
+//         array[k] = temp;
+//       }
+//     }
+//   }
+//   return array[array.length - 2];
+// }
+// console.log(findSecondLargestNumber([10, 5, 20, 8]));
+
+// 30. Remove Specific Element from Array
+
+// Task: Given array and value, return new array with all occurrences removed.
+// Example:
+// Input: [1,2,3,2,4], 2
+// Output: [1,3,4]
+
+// function removeSpecificElementsFromArray(array, target) {
+//   return array.filter((el) => el !== target);
+// }
+// console.log(removeSpecificElementsFromArray([1, 2, 3, 2, 4], 2));
