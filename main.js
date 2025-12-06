@@ -356,3 +356,64 @@
 //   return splitedStr.join(" ");
 // }
 // console.log(capitalizeFirstLetter("hello world"));
+
+// 24. Return Index of First Occurrence
+
+// Task: Without using indexOf, find the first index of a given character in a string.
+// Example: "hello", 'l' → 2
+
+// function findIndexOfTarget(str, target) {
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === target) {
+//       return i;
+//     }
+//   }
+//   return -1;
+// }
+// console.log(findIndexOfTarget("hello", "h"));
+
+// 25. Check if Array is Sorted
+
+// Task: Given an array, return true if it's sorted ascending, otherwise false.
+// Example: [1,2,3,4] → true
+
+// function isSorted(array) {
+//   for (let i = 0; i < array.length - 1; i++) {
+//     if (array[i] > array[i + 1]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// console.log(isSorted([1, 2, 3, 4, 5]));
+
+// 26. Sum of Digits
+
+// Task: Input: 12345
+// Output: 1+2+3+4+5 = 15
+
+// function sumOfDigits(number) {
+//   let stringedNumber = number.toString();
+//   let sum = 0;
+//   for (let i = 0; i < stringedNumber.length; i++) {
+//     sum += Number(stringedNumber[i]);
+//   }
+//   return sum;
+// }
+// console.log(sumOfDigits(12345));
+
+// 27. Remove Falsy Values
+
+// Task: Remove all falsy values (false, 0, '', null, undefined, NaN) from an array.
+// Example: [0,1,false,2,"",3] → [1,2,3]
+
+// function removeFalsyValues(array) {
+//   let ans = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i]) {
+//       ans.push(array[i]);
+//     }
+//   }
+//   return ans;
+// }
+// console.log(removeFalsyValues([0, 1, false, 2, "", 3]));
