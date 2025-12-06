@@ -473,3 +473,92 @@
 //   return array.filter((el) => el !== target);
 // }
 // console.log(removeSpecificElementsFromArray([1, 2, 3, 2, 4], 2));
+
+// 31. Find the Shortest Word
+
+// Task: Given a sentence, return the shortest word.
+// Example: "NestJS is awesome" → "is"
+
+// function findShortestWord(str) {
+//   let splitedStr = str.split(" ");
+//   let sortedStr = splitedStr.sort((a, b) => a.length - b.length);
+//   return sortedStr[0];
+// }
+// console.log(findShortestWord("nestjs is awesome"));
+
+// 32. Count Even Numbers in Array
+
+// Task: Given an array of numbers, return how many are even.
+// Example: [1,2,3,4,5,6] → 3
+
+// function countEvenNums(array) {
+//   let cnt = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 2 === 0) cnt += 1;
+//   }
+//   return cnt;
+// }
+// console.log(countEvenNums([1, 2, 3, 4, 5, 6, 8, 10]));
+
+// 33. Convert Snake Case to Camel Case
+
+// Task:
+// Input: "hello_world_this_is_code"
+// Output: "helloWorldThisIsCode"
+
+// function convertSnakeCaseToCamelCase(str) {
+//   let splitedStr = str.split("_");
+//   for (let i = 1; i < splitedStr.length; i++) {
+//     splitedStr[i] = splitedStr[i][0].toUpperCase() + splitedStr[i].slice(1);
+//   }
+//   return splitedStr.join("");
+// }
+// console.log(convertSnakeCaseToCamelCase("hello_world_this_is_code"));
+
+// 34. Repeat a String n Times (no repeat())
+
+// Task:
+// Input: "abc", 3
+// Output: "abcabcabc"
+
+// function repeatStringNTimes(str, n) {
+//   let result = "";
+//   for (let i = 0; i < n; i++) {
+//     result += str;
+//   }
+//   return result;
+// }
+// console.log(repeatStringNTimes("abc", 3));
+
+// 35. Find Last Index of Character (no lastIndexOf())
+
+// Task:
+// Input: "banana", 'a'
+// Output: 5
+
+// function lastIndexOfChar(str, char) {
+//   for (let i = str.length - 1; i > 0; i--) {
+//     if (str[i] === char) {
+//       return i;
+//     }
+//   }
+//   return -1;
+// }
+// console.log(lastIndexOfChar("banana", "a"));
+
+// 36. Return Only Numbers from Array
+
+// Task:
+// Input: ["a", 1, "b", 2, {}, 3]
+// Output: [1,2,3]
+
+// function onlyNumbers(array) {
+//   let ans = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (typeof array[i] === "number") {
+//       ans.push(array[i]);
+//     }
+//   }
+//   return ans;
+// }
+// console.log(onlyNumbers(["a", 1, "b", 2, {}, 3]));
