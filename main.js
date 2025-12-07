@@ -562,3 +562,90 @@
 //   return ans;
 // }
 // console.log(onlyNumbers(["a", 1, "b", 2, {}, 3]));
+
+// 37. Check if Two Arrays Are Equal
+
+// Task: Return true if arrays have the same values in same order.
+// Example:
+// [1,2,3] and [1,2,3] → true
+
+// function checkIfTwoArraysAreEqual(arr1, arr2) {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// console.log(checkIfTwoArraysAreEqual([1, 2, 3], [1, 2, 3]));
+
+// 38. Find First Element Greater Than n
+
+// Task:
+// Input: [1,5,10,20], n = 7
+// Output: 10
+
+// function greaterThanN(array, n) {
+//   return array.filter((num) => num > n)[0];
+// }
+// console.log(greaterThanN([6, 50, 29, 8], 7));
+
+// 39. Reverse Only Vowels
+
+// Task:
+// Input: "hello"
+// Vowels reversed: "holle"
+
+//                                      ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+
+// function reverseOnlyVowels(str) {}
+// reverseOnlyVowels("hello");
+
+// 40. Count Unique Values
+
+// Task:
+// Input: [1,2,2,3,3,3]
+// Output: 3 (unique values are 1, 2, 3)
+
+// function countUniqueValues(array) {
+//   let uniqueValues = array.filter((el, index) => array.indexOf(el) == index);
+//   return [uniqueValues, uniqueValues.length];
+// }
+// console.log(countUniqueValues([1, 2, 2, 3, 3, 3]));
+
+// 41. Find All Indices of a Value
+
+// Task:
+// Input: [1,2,2,3,2], 2
+// Output: [1,2,4]
+
+// function findAllIndicesOfValue(array, target) {
+//   let ans = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === target) {
+//       ans.push(i);
+//     }
+//   }
+//   return ans;
+// }
+// console.log(findAllIndicesOfValue([1, 2, 6, 4, 5], 6));
+
+// 42. Remove All Non-Letters
+
+// Task: Remove everything except A–Z and a–z.
+// Input: "he!!o wor1d"
+// Output: "heo word"
+
+// function removeAllNonLetters(str) {
+//   let result = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if ((str[i] >= "a" && str[i] <= "z") || (str[i] >= "A" && str[i] <= "Z")) {
+//       result += str[i];
+//     }
+//   }
+//   return result;
+// }
+// console.log(removeAllNonLetters("he!!o wor1d"));
