@@ -776,3 +776,72 @@
 //   return /^[0-9]+$/.test(str);
 // }
 // console.log(checkIfStringContainsOnlyDigits("123456"));
+
+// 51. Count How Many Times Each Digit Appears
+
+// Task:
+// Input: 1122331
+// Output: {1:3, 2:2, 3:2}
+
+// function countDigits(num) {
+//   let stringedNum = num.toString();
+//   let cnt = {};
+//   for (let i = 0; i < stringedNum.length; i++) {
+//     if (cnt[stringedNum[i]]) {
+//       cnt[stringedNum[i]]++;
+//     } else {
+//       cnt[stringedNum[i]] = 1;
+//     }
+//   }
+//   return cnt;
+// }
+// console.log(countDigits(1122331));
+
+// 52. Find the Longest Increasing Sequence
+
+// Task:
+// Input: [1,2,2,3,4,1,2,3]
+// Output: length 4 (sequence: 1,2,3,4)
+
+// function longestIncreasingSequence(array) {
+//   let uniqueArray = array.filter((el, index) => array.indexOf(el) === index);
+//   return uniqueArray.length;
+// }
+// console.log(longestIncreasingSequence([1, 2, 2, 3, 4, 1, 2, 3]));
+
+// 53. Rotate Array by k Steps
+
+// Task:
+// Input: [1,2,3,4,5], k = 2
+// Output: [4,5,1,2,3]
+
+// function rotateArrayByKSteps(array, k) {
+//   let ans = [];
+//   for (let i = array.length - 1; i > k; i--) {
+//     ans.push(array[i]);
+//   }
+//   for (let i = 0; i <= k; i++) {
+//     ans.push(array[i]);
+//   }
+//   return ans;
+// }
+// console.log(rotateArrayByKSteps([1, 2, 3], 1));
+
+// 54. Check if a Number is Prime
+
+// Task:
+// Input: 7 → true, 8 → false
+
+// function isPrime(number) {
+//   if (number < 1) {
+//     return false;
+//   }
+//   for (let i = 2; i <= number; i++) {
+//     if (number % i === 0) {
+//       return false;
+//     } else {
+//       return true;
+//     }
+//   }
+// }
+// console.log(isPrime(12));
