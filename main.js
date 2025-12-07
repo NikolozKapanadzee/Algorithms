@@ -649,3 +649,130 @@
 //   return result;
 // }
 // console.log(removeAllNonLetters("he!!o wor1d"));
+
+// 43. Sum Only Positive Numbers
+
+// Task:
+// Input: [-1, 5, 3, -2, 7]
+// Output: 15
+
+// function sumOfOnlyPositiveNumbers(array) {
+//   let cnt = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] > 0) {
+//       cnt += array[i];
+//     }
+//   }
+//   return cnt;
+// }
+// console.log(sumOfOnlyPositiveNumbers([-1, 5, 3, -2, 7]));
+
+// 44. Find the Difference Between Max and Min
+
+// Task:
+// Input: [4, 10, 2, 8]
+// Output: 10 - 2 = 8
+
+// function differenceBetweenMaxAndMin(array) {
+//   let sortedArray = array.sort((a, b) => a - b);
+//   return sortedArray[sortedArray.length - 1] - sortedArray[0];
+// }
+// console.log(differenceBetweenMaxAndMin([4, 20, 2, 8]));
+
+// 45. Convert Array of Numbers to String
+
+// Task:
+// Input: [1,2,3]
+// Output: "123"
+
+// function convertArrayOfNumbersToString(array) {
+//   let result = "";
+//   for (let i = 0; i < array.length; i++) {
+//     result += array[i];
+//   }
+//   return result;
+// }
+// console.log(convertArrayOfNumbersToString([1, 2, 3]));
+
+// 46. Multiply Each Element by Its Index
+
+// Task:
+// Input: [1, 3, 5]
+// Output: [0, 3, 10]
+
+// function multipyEachElementByItsIndex(array) {
+//   let ans = [];
+//   for (let i = 0; i < array.length; i++) {
+//     ans.push(array[i] * i);
+//   }
+//   return ans;
+// }
+// console.log(multipyEachElementByItsIndex([1, 3, 5]));
+
+// 47. Return All Pairs That Sum to Target
+
+// Task:
+// Input: [1,2,3,4,5], target = 6
+// Output: [[1,5], [2,4]]
+
+// function returnAllPairsThatSumTarget(array, target) {
+//   let ans = [];
+//   for (let i = 0; i < array.length; i++) {
+//     for (let k = i + 1; k < array.length; k++) {
+//       if (array[i] + array[k] === target) {
+//         ans.push([array[i], array[k]]);
+//       }
+//     }
+//   }
+//   return ans;
+// }
+// console.log(returnAllPairsThatSumTarget([1, 2, 3, 4, 5], 6));
+
+// 48. Remove Every n-th Element
+
+// Task:
+// Input: [1,2,3,4,5,6], n = 2
+// Output: [1,3,5]
+
+// function removeEveryNthElement(array, n) {
+//   let ans = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] % n !== 0) {
+//       ans.push(array[i]);
+//     }
+//   }
+//   return ans;
+// }
+// console.log(removeEveryNthElement([1, 2, 3, 4, 5, 6], 2));
+
+// 49. Insert a Value at Specific Index
+
+// Task:
+// Input: [1,2,3,4], value = 99, index = 2
+// Output: [1,2,99,3,4] (without using splice)
+
+//ინდექსამდე ჩვეულებრიად ჩავფუშოთ ახალ ერეიში რიცხვები,ინდექსს როცა მივაღწევთ მერე დავუმატოთ ჩვენი ველიუ და ამ ყველაფრის შემდეგ გავაგრძელოთ ინდექისან ერეის ბოლომდე არსებული ელემენტების ჩაფუშვა
+
+// function insertAValueAtSpecificIndex(array, value, index) {
+//   let newArray = [];
+//   for (let i = 0; i < index; i++) {
+//     newArray.push(array[i]);
+//   }
+//   newArray.push(value);
+//   for (let i = index; i < array.length; i++) {
+//     newArray.push(array[i]);
+//   }
+//   return newArray;
+// }
+// console.log(insertAValueAtSpecificIndex([1, 2, 3, 4], 99, 2));
+
+// 50. Check if String Contains Only Digits
+
+// Task:
+// Input: "123456" → true
+// Input: "123a56" → false
+
+// function checkIfStringContainsOnlyDigits(str) {
+//   return /^[0-9]+$/.test(str);
+// }
+// console.log(checkIfStringContainsOnlyDigits("123456"));
