@@ -845,3 +845,97 @@
 //   }
 // }
 // console.log(isPrime(12));
+
+// 55. Convert Roman Numeral to Integer
+
+// Task:
+// Input: "IX" → 9
+// Input: "XIV" → 14
+//                                     ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+
+// 56. Remove Consecutive Duplicates
+
+// Task:
+// Input: [1,1,2,2,2,3,3,1]
+// Output: [1,2,3,1]
+
+// function removeConsecutiveDuplicates(array) {
+//   let ans = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] !== array[i - 1]) {
+//       ans.push(array[i]);
+//     }
+//   }
+//   return ans;
+// }
+// console.log(removeConsecutiveDuplicates([1, 1, 2, 2, 2, 3, 3, 1]));
+
+// 57. Flatten Nested Array (One Level)
+
+// Task:
+// Input: [[1,2], 3, [4], 5]
+// Output: [1,2,3,4,5]
+
+// function flattenNestedArray(array) {
+//   return array.flat();
+// }
+// console.log(flattenNestedArray([[1, 2], 3, [4], 5]));
+
+// 58. Find All Substrings of a String
+
+// Task:
+// Input: "abc"
+// Output: ["a","ab","abc","b","bc","c"]
+
+// function findAllSubstringsOfString(str) {
+//   let ans = [];
+//   for (let i = 0; i < str.length; i++) {
+//     for (let k = i + 1; k <= str.length; k++) {
+//       ans.push(str.slice(i, k));
+//     }
+//   }
+//   return ans;
+// }
+// console.log(findAllSubstringsOfString("abc"));
+
+// 59. Group Array Elements by Type
+
+// Task:
+// Input: [1, "a", true, 2, "b"]
+// Output:
+
+// {
+//   number: [1,2],
+//   string: ["a","b"],
+//   boolean: [true]
+// }
+
+// function groupArrayElementsByType(array) {
+//   let obj = {};
+//   for (let i = 0; i < array.length; i++) {
+//     let type = typeof array[i];
+//     if (!obj[type]) {
+//       obj[type] = [];
+//     }
+//     obj[type].push(array[i]);
+//   }
+//   return obj;
+// }
+// console.log(groupArrayElementsByType([1, "a", true, 2, "b"]));
+
+// 60. Reverse Words in a Sentence
+
+// Task:
+// Input: "I love coding"
+// Output: "coding love I"
+
+// function reverseWordsInaSentence(str) {
+//   let splitedStr = str.split(" ");
+//   let ans = "";
+//   for (let i = splitedStr.length - 1; i >= 0; i--) {
+//     const element = splitedStr[i];
+//     ans += element + " ";
+//   }
+//   return ans;
+// }
+// console.log(reverseWordsInaSentence("I love coding"));
