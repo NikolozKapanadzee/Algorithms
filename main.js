@@ -939,3 +939,188 @@
 //   return ans;
 // }
 // console.log(reverseWordsInaSentence("I love coding"));
+
+// 61. Merge Two Sorted Arrays
+
+// Task:
+// Input: [1,3,5], [2,4,6]
+// Output: [1,2,3,4,5,6] (without using .sort())
+
+// function mergeTwoSortedArrays(arr1, arr2) {
+//   let tempAns = [];
+//   for (let i = 0; i < arr1.length; i++) {
+//     tempAns.push(arr1[i]);
+//   }
+//   for (let k = 0; k < arr2.length; k++) {
+//     tempAns.push(arr2[k]);
+//   }
+//   for (let q = 0; q < tempAns.length; q++) {
+//     for (let j = q + 1; j < tempAns.length; j++) {
+//       if (tempAns[q] > tempAns[j]) {
+//         let temp = tempAns[q];
+//         tempAns[q] = tempAns[j];
+//         tempAns[j] = temp;
+//       }
+//     }
+//   }
+//   return tempAns;
+// }
+// console.log(mergeTwoSortedArrays([1, 3, 5], [2, 4, 6]));
+
+// 62. Find Second Smallest Number
+
+// Task:
+// Input: [5,2,8,1,4]
+// Output: 2
+
+// function findSecondSmallestNumber(array) {
+//   return array.sort((a, b) => a - b)[1];
+// }
+// console.log(findSecondSmallestNumber([5, 3, 8, 1, 4]));
+
+// 63. Sum of Diagonal Elements in a Matrix
+
+// Task:
+// Input:
+
+// [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9]
+// ]
+
+// Output: 1 + 5 + 9 = 15
+//                            ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+// function sumOfDiagonalElementsInMatrix(array) {}
+
+// 64. Count Character Frequency in a String
+
+// Task:
+// Input: "hello world"
+// Output: {h:1, e:1, l:3, o:2, " ":1, w:1, r:1, d:1}
+
+// function countCharFreqInString(str) {
+//   let obj = {};
+//   for (let i = 0; i < str.length; i++) {
+//     if (obj[str[i]]) {
+//       obj[str[i]] = obj[str[i]] + 1;
+//     } else {
+//       obj[str[i]] = 1;
+//     }
+//   }
+//   return obj;
+// }
+// console.log(countCharFreqInString("hello world"));
+
+// 65. Move Zeros to End of Array
+
+// Task:
+// Input: [0,1,0,3,12]
+// Output: [1,3,12,0,0]
+
+// function moveZerosToEndOfArray(array) {
+//   let nonZeros = array.filter((el) => el !== 0);
+//   let zeros = array.filter((el) => el === 0);
+//   return [...nonZeros, ...zeros];
+// }
+// console.log(moveZerosToEndOfArray([0, 1, 0, 3, 12]));
+
+// 66. Find Missing Number in 1..n
+
+// Task:
+// Input: [1,2,4,5] (n=5)
+// Output: 3
+
+// 66. Find Missing Number in 1..n
+
+// Task:
+// Input: [1,2,4,5] (n=5)
+// Output: 3
+
+// function findMissingNumber(array, n) {
+//   let currentSum = 0;
+//   let expectedSum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     currentSum += array[i];
+//   }
+//   for (let k = 1; k <= n; k++) {
+//     expectedSum += k;
+//   }
+//   return expectedSum - currentSum;
+// }
+// console.log(findMissingNumber([1, 3, 4, 5], 5));
+
+// 67. Check if Array is a Palindrome
+
+// Task:
+// Input: [1,2,3,2,1] → true
+// Input: [1,2,3] → false
+
+// function isPalidome(array) {
+//   let newArray = [];
+//   for (let i = array.length - 1; i >= 0; i--) {
+//     newArray.push(array[i]);
+//   }
+//   if (JSON.stringify(array) === JSON.stringify(newArray)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isPalidome([1, 2, 3, 2, 1]));
+
+// 68. Count Vowels and Consonants
+
+// Task:
+// Input: "hello world"
+// Output: {vowels:3, consonants:7}
+
+// function countVowelsAndConsonants(string) {
+//   let result = {
+//     vowels: 0,
+//     consonants: 0,
+//   };
+//   const vowels = ["a", "e", "i", "o", "u"];
+//   for (let i = 0; i < string.length; i++) {
+//     if (vowels.includes(string[i])) {
+//       result.vowels++;
+//     } else if (string[i] >= "a" && string[i] <= "z") {
+//       result.consonants++;
+//     }
+//   }
+//   return result;
+// }
+// console.log(countVowelsAndConsonants("hello world"));
+
+// 69. Find Pairs with Difference k
+
+// Task:
+// Input: [1,5,3,4], k=2
+// Output: [[1,3],[3,5],[4,2]] (pairs with difference = 2)
+
+// function findPairsWithDifferenceK(array, k) {
+//   let ans = [];
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = i + 1; j < array.length; j++) {
+//       if (Math.abs(array[j] - array[i]) === k) {
+//         ans.push([array[i], array[j]]);
+//       }
+//     }
+//   }
+//   return ans;
+// }
+// console.log(findPairsWithDifferenceK([1, 5, 3, 4], 2));
+
+// 70. Sum of Even Fibonacci Numbers ≤ n
+
+// Task:
+// Input: 10 → Fibonacci sequence ≤ 10: [1,1,2,3,5,8] → even numbers [2,8] → sum = 10
+
+function sumOfEvenFibonacciNumbers(number) {
+  let fib = [1, 1];
+  for (let i = 2; i < number; i++) {
+    fib.push(fib[i - 1] + fib[i - 2]);
+  }
+  return fib.slice(0, number);
+}
+console.log(sumOfEvenFibonacciNumbers(10));
