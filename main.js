@@ -1116,11 +1116,71 @@
 // Task:
 // Input: 10 → Fibonacci sequence ≤ 10: [1,1,2,3,5,8] → even numbers [2,8] → sum = 10
 
-function sumOfEvenFibonacciNumbers(number) {
-  let fib = [1, 1];
-  for (let i = 2; i < number; i++) {
-    fib.push(fib[i - 1] + fib[i - 2]);
-  }
-  return fib.slice(0, number);
-}
-console.log(sumOfEvenFibonacciNumbers(10));
+// function sumOfEvenFibonacciNumbers(number) {
+//   let fib = [0, 1];
+//   while (true) {
+//     let next = fib[fib.length - 1] + fib[fib.length - 2];
+//     if (next > number) {
+//       break;
+//     }
+//     fib.push(next);
+//   }
+//   let ans = 0;
+//   for (let i = 0; i < fib.length; i++) {
+//     if (fib[i] % 2 === 0) {
+//       ans += fib[i];
+//     }
+//   }
+//   return ans;
+// }
+// console.log(sumOfEvenFibonacciNumbers(10));
+
+// 71. Intersection of Two Arrays (Unique)
+
+// Task:
+// Input: [1,2,2,3] and [2,3,4]
+// Output: [2,3]
+
+// function intersectionOfTwoArrays(arr1, arr2) {
+//   let intersectionArray = [...arr1, ...arr2];
+//   let uniques = intersectionArray.filter(
+//     (el) => arr1.includes(el) && arr2.includes(el)
+//   );
+//   let finalAns = uniques.filter((el, index) => uniques.indexOf(el) === index);
+//   return finalAns;
+// }
+// console.log(intersectionOfTwoArrays([1, 2, 2, 3], [2, 3, 4]));
+
+// 72. Check if Two Strings Are Anagrams
+
+// Task:
+// Input: "listen", "silent"
+// Output: true
+
+// function isAnagram(string1, string2) {
+//   let sortedString1 = string1.split("").sort().join("");
+//   let sortedString2 = string2.split("").sort().join("");
+//   if (sortedString1 === sortedString2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isAnagram("listen", "silent"));
+
+// 73. Find All Divisors of a Number
+
+// Task:
+// Input: 12
+// Output: [1,2,3,4,6,12]
+
+// function findAllDivisorsOfNumber(number) {
+//   let ans = [];
+//   for (let index = 0; index <= number; index++) {
+//     if (number % index === 0) {
+//       ans.push(index);
+//     }
+//   }
+//   return ans;
+// }
+// console.log(findAllDivisorsOfNumber(12));
