@@ -1184,3 +1184,119 @@
 //   return ans;
 // }
 // console.log(findAllDivisorsOfNumber(12));
+
+// 74. Find the Element Appearing Most Times
+
+// Task:
+// Input: [1,2,2,3,3,3,4]
+// Output: 3
+//                                  ????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+// function findElementAppearingMostTimes(array) {
+//   let uniques = array.filter(
+//     (el) => array.indexOf(el) !== array.lastIndexOf(el)
+//   );
+//   for (let i = 0; i < uniques.length; i++) {}
+// }
+// console.log(findElementAppearingMostTimes([1, 2, 2, 3, 3, 3, 4]));
+
+// 75. Find First Non-Repeating Character
+
+// Task:
+// Input: "aabbccddeefg"
+// Output: "f"
+
+// function firstNonRepeatingCharacter(str) {
+//   let splitedStr = str.split("");
+//   let nonUniques = splitedStr.filter(
+//     (el) => splitedStr.indexOf(el) === splitedStr.lastIndexOf(el)
+//   );
+//   return nonUniques[0];
+// }
+// console.log(firstNonRepeatingCharacter("aabbccddeefg"));
+
+// 76. Calculate Running Sum of Array
+
+// Task:
+// Input: [1,2,3,4]
+// Output: [1,3,6,10]
+
+// function calculateRunningSumOfArray(array) {
+//   let ans = [];
+//   let sum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     sum += array[i];
+//     ans.push(sum);
+//   }
+//   return ans;
+// }
+// console.log(calculateRunningSumOfArray([1, 2, 3, 4]));
+
+// 77. Chunk Array into Groups of n
+
+// Task:
+// Input: [1,2,3,4,5,6,7], n=3
+// Output: [[1,2,3],[4,5,6],[7]]
+
+// function chunkArrayIntoGroups(array, n) {
+//   let ans = [];
+//   let chunkSize = Math.ceil(array.length / n);
+//   for (let i = 0; i < array.length; i += chunkSize) {
+//     ans.push(array.slice(i, i + chunkSize));
+//   }
+//   return ans;
+// }
+// console.log(chunkArrayIntoGroups([1, 2, 3, 4, 5, 6, 7], 3));
+
+// 78. Remove Duplicate Characters from String
+
+// Task:
+// Input: "banana"
+// Output: "ban"
+
+// function removeDuplicateCharactersFromString(string) {
+//   let splitedString = string.split("");
+//   let uniques = splitedString.filter(
+//     (el, index) => splitedString.indexOf(el) === index
+//   );
+//   return uniques.join("");
+// }
+// console.log(removeDuplicateCharactersFromString("banana"));
+
+// 79. Find the K-th Largest Element
+
+// Task:
+// Input: [3,2,1,5,6,4], k=2
+// Output: 5 (second largest)
+
+// function findKthLargestElement(array, k) {
+//   let sortedArray = array.sort((a, b) => b - a);
+//   return sortedArray[k - 1];
+// }
+// console.log(findKthLargestElement([3, 2, 1, 5, 6, 4], 2));
+
+// 80. Check Balanced Parentheses
+
+// Task:
+// Input: "(()())" → true
+// Input: ")(()" → false
+// ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+// function isBalanced(string) {
+//   // let splitedString = string.split("");
+//   // if (splitedString.length % 2 === 1) {
+//   //   return false;
+//   // }
+//   // let firstHalf = [];
+//   // let secondHalf = [];
+//   // for (let i = 0; i < splitedString.length / 2; i++) {
+//   //   firstHalf.push(splitedString[i]);
+//   // }
+//   // for (let i = splitedString.length - 1; i >= splitedString.length / 2; i--) {
+//   //   secondHalf.push(splitedString[i]);
+//   // }
+//   // if (JSON.stringify(firstHalf === JSON.stringify(secondHalf))) {
+//   //   return true;
+//   // } else {
+//   //   return false;
+//   // }
+// }
+// console.log(isBalanced("(()())"));
