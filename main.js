@@ -1300,3 +1300,162 @@
 //   // }
 // }
 // console.log(isBalanced("(()())"));
+
+// 81. Remove All Duplicate Values (Keep Only One)
+
+// Task:
+// Input: [1,2,2,3,3,3,4]
+// Output: [1,2,3,4] (without using Set)
+
+// function removeAllDuplicateValues(array) {
+//   let uniques = array.filter((el, index) => array.indexOf(el) === index);
+//   return uniques;
+// }
+// console.log(removeAllDuplicateValues([1, 2, 2, 3, 3, 3, 4]));
+
+// 82. Find the Longest Word in a Sentence
+
+// Task:
+// Input: "NestJS makes backend easier"
+// Output: "backend"
+
+// function findTheLongestWordInSentence(string) {
+//   let splitedString = string.split(" ");
+//   let sortedStringArray = splitedString.sort((a, b) => a.length - b.length);
+//   return sortedStringArray[sortedStringArray.length - 1];
+// }
+// console.log(findTheLongestWordInSentence("NestJS makes backend easier"));
+
+// 83. Check if a Number is Perfect
+
+// A perfect number equals the sum of its divisors except itself.
+// 6 → 1 + 2 + 3 = 6 → perfect.
+
+// Task: Implement this check.
+
+// function isPerfect(number) {
+//   let sum = 0;
+//   let divisors = [];
+//   for (let i = 1; i < number; i++) {
+//     if (number % i === 0) {
+//       divisors.push(i);
+//     }
+//   }
+//   for (let k = 0; k < divisors.length; k++) {
+//     sum += divisors[k];
+//   }
+//   if (sum === number) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isPerfect(200));
+
+// 84. Count Distinct Characters in a String
+
+// Task:
+// Input: "hello"
+// Output: 4 (h, e, l, o)
+
+// function countDistinctCharactersInString(string) {
+//   let splitedString = string.split("");
+//   let uniques = splitedString.filter(
+//     (el, index) => splitedString.indexOf(el) === index
+//   );
+//   return [uniques.length, uniques];
+// }
+// console.log(countDistinctCharactersInString("hello"));
+
+// 85. Remove All Elements Greater Than n
+
+// Task:
+// Input: [1,4,2,6,3], n=3
+// Output: [1,2,3]
+
+// function removeAllElementsGreaterThanN(array, n) {
+//   return array.filter((el) => el <= n);
+// }
+// console.log(removeAllElementsGreaterThanN([1, 4, 2, 6, 3], 3));
+
+// 86. Calculate Average of Array
+
+// Task:
+// Input: [10, 20, 30]
+// Output: 20
+
+// function calculateAverageOfArray(array) {
+//   let average = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     average += array[i];
+//   }
+//   return average / array.length;
+// }
+// console.log(calculateAverageOfArray([10, 20, 30]));
+
+// 87. Convert Array of Objects to One Object
+
+// Task:
+// Input:
+
+// [
+//   {a: 1},
+//   {b: 2},
+//   {c: 3}
+// ]
+
+// Output:
+
+// {a:1, b:2, c:3}
+//  ??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+// function convertArrayOfObjectsToOneObject(array) {
+//   return array.flat();
+// }
+// console.log(convertArrayOfObjectsToOneObject([{ a: 1 }, { b: 2 }, { c: 3 }]));
+
+// 88. Compare Two Objects (Shallow)
+
+// Task:
+// Return true if both objects have the same keys & values.
+
+// Example:
+// {a:1, b:2} and {a:1, b:2} → true
+
+// function compareTwoObjects(obj1, obj2) {
+//   return JSON.stringify(obj1) === JSON.stringify(obj2);
+// }
+// console.log(compareTwoObjects({ a: 1, b: 2 }, { a: 1, b: 2 }));
+
+// 89. Find All Unique Pairs That Multiply to Target
+
+// Task:
+// Input: [2,4,1,6,5,3], target = 6
+// Output: [[2,3],[1,6]]
+
+// function findAllUniquePairsThatMultiplyToTarget(array, target) {
+//   let ans = [];
+//   for (let i = 0; i < array.length; i++) {
+//     for (let k = i + 1; k < array.length; k++) {
+//       if (array[i] * array[k] === target) {
+//         ans.push([array[i], array[k]]);
+//       }
+//     }
+//   }
+//   return ans;
+// }
+// console.log(findAllUniquePairsThatMultiplyToTarget([2, 4, 1, 6, 5, 3], 6));
+
+// 90. Find the Index Where Sum Left = Sum Right
+
+// Find the index where left-side sum equals right-side sum.
+
+// Task:
+// Input: [1,2,3,4,6]
+// Output: 3
+// Because:
+
+// left side of index 3 → 1+2+3 = 6
+
+// right side → 6
+
+function findTheIndexWhereSumLeftEqualsSumRight(array) {}
