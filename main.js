@@ -1458,4 +1458,176 @@
 
 // right side → 6
 
-function findTheIndexWhereSumLeftEqualsSumRight(array) {}
+// function findTheIndexWhereSumLeftEqualsSumRight(array) {
+//   let totalSum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     totalSum += array[i];
+//   }
+//   let leftSum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     let rightSum = totalSum - leftSum - array[i];
+//     if (leftSum === rightSum) {
+//       return i;
+//     }
+//     leftSum += array[i];
+//   }
+//   return -1;
+// }
+// console.log(findTheIndexWhereSumLeftEqualsSumRight([1, 2, 3, 4, 6]));
+
+// 91. Find All Numbers That Appear More Than Once
+
+// Input: [1,2,3,2,4,1]
+// Output: [1,2]
+
+// function findAllNumbersThatAppearMoreThanOnce(array) {
+//   let nonUniques = array.filter(
+//     (el) => array.indexOf(el) !== array.lastIndexOf(el)
+//   );
+//   let nonUniquesOnlyOnce = nonUniques.filter(
+//     (el, index) => nonUniques.indexOf(el) === index
+//   );
+//   return nonUniquesOnlyOnce;
+// }
+// console.log(findAllNumbersThatAppearMoreThanOnce([1, 2, 3, 2, 4, 1]));
+
+// 92. Replace All Spaces With Hyphens
+
+// Input: "hello world js"
+// Output: "hello-world-js"
+
+//solution N1
+
+// function replaceAllSpacesWithHyphens(string) {
+//   return string.replaceAll(" ", "-");
+// }
+// console.log(replaceAllSpacesWithHyphens("hello world js"));
+
+//solution N2
+
+// function replaceAllSpacesWithHyphens(string) {
+//   let ans = "";
+//   let splitedString = string.split(" ");
+//   for (let i = 0; i < splitedString.length; i++) {
+//     ans = ans + splitedString[i];
+//     if (i < splitedString.length - 1) {
+//       ans += "-";
+//     }
+//   }
+//   return ans;
+// }
+
+// console.log(replaceAllSpacesWithHyphens("hello world js"));
+
+// 93. Find the Index of the Largest Number
+
+// Input: [10, 25, 3, 7]
+// Output: 1
+
+// function findIndexOfLargestNumber(array) {
+//   let max = array[0];
+//   let maxIndex = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] > max) {
+//       max = array[i];
+//       maxIndex = i;
+//     }
+//   }
+//   return maxIndex;
+// }
+
+// console.log(findIndexOfLargestNumber([10, 25, 3, 7]));
+
+// 94. Convert an Array of Numbers to an Array of Strings
+
+// Input: [1,2,3]
+// Output: ["1","2","3"]
+
+// function convertArrayOfNumbersToStrings(array) {
+//   let ans = "";
+//   for (let i = 0; i < array.length; i++) {
+//     ans += array[i];
+//   }
+//   return ans.split("");
+// }
+// console.log(convertArrayOfNumbersToStrings([1, 2, 3]));
+
+// 95. Find All Substrings of a String
+
+// Input: "abc"
+// Output: ["a","ab","abc","b","bc","c"]
+
+// ????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+
+// 96. Find the Average of an Array of Numbers
+
+// Input: [2,4,6,8]
+// Output: 5
+
+// function average(array) {
+//   let avg = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     avg += array[i];
+//   }
+//   return avg / array.length;
+// }
+// console.log(average([2, 4, 6, 8]));
+
+// 97. Check If Two Strings Are Anagrams
+
+// Input: "listen" & "silent"
+// Output: true
+
+// function isAnagram(str1, str2) {
+//   let splitedStr1 = str1.split("").sort();
+//   let splitedStr2 = str2.split("").sort();
+//   return JSON.stringify(splitedStr1) === JSON.stringify(splitedStr2);
+// }
+// console.log(isAnagram("listen", "silent"));
+
+// 98. Remove All Numbers From a String
+
+// Input: "a1b2c3d"
+// Output: "abcd"
+
+// function removeAllNumbersFromString(string) {
+//   let ans = "";
+//   let splitedString = string.split("");
+//   for (let i = 0; i < splitedString.length; i++) {
+//     if (isNaN(splitedString[i])) {
+//       ans += splitedString[i];
+//     }
+//   }
+//   return ans;
+// }
+// console.log(removeAllNumbersFromString("a1b2c3d"));
+
+// 99. Count How Many Times a Number Appears in an Array
+
+// Input: arr = [1,2,3,2,2,4], num = 2
+// Output: 3
+
+// function countHowManyTimesNumberAppearInAnArray(array, number) {
+//   let cnt = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === number) {
+//       cnt++;
+//     }
+//   }
+//   return cnt;
+// }
+// console.log(countHowManyTimesNumberAppearInAnArray([1, 2, 3, 2, 2, 4], 2));
+
+// 100. Convert an Array Into an Object With Index as Key
+
+// Input: ["a","b","c"]
+// Output: {0: "a", 1: "b", 2: "c"}
+
+// function convertArrayIntoObjectWithIndexKey(array) {
+//   let obj = {};
+//   for (let i = 0; i < array.length; i++) {
+//     obj[i] = array[i];
+//   }
+//   return obj;
+// }
+// console.log(convertArrayIntoObjectWithIndexKey(["a", "b", "c"]));
