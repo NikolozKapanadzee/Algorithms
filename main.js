@@ -1631,3 +1631,113 @@
 //   return obj;
 // }
 // console.log(convertArrayIntoObjectWithIndexKey(["a", "b", "c"]));
+
+const names = ["Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace"];
+const ages = [25, 30, 22, 28, 35, 27, 31];
+const users = [
+  { name: "Alice", age: 25, city: "New York" },
+  { name: "Bob", age: 30, city: "London" },
+  { name: "Charlie", age: 22, city: "Paris" },
+  { name: "David", age: 28, city: "Berlin" },
+  { name: "Eve", age: 35, city: "Tokyo" },
+];
+
+// Task 1: Filter Names Starting With 'A'
+
+// Input: names
+
+// Output: ["Alice"]
+
+// function filterNames(names) {
+//   return names.filter((name) => name.startsWith("A"));
+// }
+// console.log(filterNames(names));
+
+// Task 2: Increase All Ages by 1
+
+// Input: ages
+
+// Output: [26, 31, 23, 29, 36, 28, 32]
+
+// function increaseAllAgesByOne(ages) {
+//   let increasedAges = [];
+//   for (let i = 0; i < ages.length; i++) {
+//     increasedAges.push(ages[i] + 1);
+//   }
+//   return increasedAges;
+// }
+// console.log(increaseAllAgesByOne(ages));
+
+// Task 3: Find Users Older Than 28
+
+// Input: users
+
+// Output: [{ name: "Bob", ... }, { name: "Eve", ... }]
+
+// function findUsersOlderThan28(users) {
+//   return users.filter((user) => user.age > 28);
+// }
+// console.log(findUsersOlderThan28(users));
+
+// Task 4: Sort Names Alphabetically
+
+// Input: names
+
+// Output: ["Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace"]
+
+// function sortNames(names) {
+//   return names.sort();
+// }
+// console.log(sortNames(names));
+
+// Task 5: Get Array of User Names
+
+// Input: users
+
+// Output: ["Alice", "Bob", "Charlie", "David", "Eve"]
+
+// function getArrayOfUserNames(users) {
+//   let userNames = users.map((user) => user.name);
+//   return userNames;
+// }
+// console.log(getArrayOfUserNames(users));
+
+// Task 6: Find Average Age
+
+// Input: ages
+
+// Output: 28.29 (sum / count)
+
+// function findAverageAge(ages) {
+//   let cnt = 0;
+//   let ans = 0;
+//   for (let i = 0; i < ages.length; i++) {
+//     cnt += ages[i];
+//     ans = cnt / ages.length;
+//   }
+//   return ans;
+// }
+// console.log(findAverageAge(ages));
+
+// Task 7: Find Index of "Charlie"
+
+// Input: names
+
+// Output: 2
+
+// function findIndexOfCharlie(names) {
+//   for (let i = 0; i < names.length; i++) {
+//     if (names[i] === "Charlie") {
+//       return i;
+//     }
+//   }
+// }
+// console.log(findIndexOfCharlie(names));
+
+// Task 8: Add a New User
+
+// Add: { name: "Hannah", age: 29, city: "Rome" }
+
+// Output: updated users array
+
+function addNewUser(params) {}
