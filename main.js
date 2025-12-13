@@ -1632,15 +1632,15 @@
 // }
 // console.log(convertArrayIntoObjectWithIndexKey(["a", "b", "c"]));
 
-const names = ["Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace"];
-const ages = [25, 30, 22, 28, 35, 27, 31];
-const users = [
-  { name: "Alice", age: 25, city: "New York" },
-  { name: "Bob", age: 30, city: "London" },
-  { name: "Charlie", age: 22, city: "Paris" },
-  { name: "David", age: 28, city: "Berlin" },
-  { name: "Eve", age: 35, city: "Tokyo" },
-];
+// const names = ["Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace"];
+// const ages = [25, 30, 22, 28, 35, 27, 31];
+// const users = [
+//   { name: "Alice", age: 25, city: "New York" },
+//   { name: "Bob", age: 30, city: "London" },
+//   { name: "Charlie", age: 22, city: "Paris" },
+//   { name: "David", age: 28, city: "Berlin" },
+//   { name: "Eve", age: 35, city: "Tokyo" },
+// ];
 
 // Task 1: Filter Names Starting With 'A'
 
@@ -1740,4 +1740,79 @@ const users = [
 
 // Output: updated users array
 
-function addNewUser(params) {}
+// function addNewUser(users) {
+//   return [...users, { name: "Hannah", age: 29, city: "Rome" }];
+// }
+// console.log(addNewUser(users));
+
+// Task 9: Remove Users from a Specific City
+
+// Remove all users from "Paris"
+
+// Output: updated users array
+
+// function removeUserFromSpecificCity(users) {
+//   return users.filter((user) => user.city !== "Paris");
+// }
+// console.log(removeUserFromSpecificCity(users));
+
+// Task 10: Create Array of Strings "Name (Age)
+
+// Input: users
+
+// Output: ["Alice (25)", "Bob (30)", ...]
+
+// function createArrayOfStrings(users) {
+//   return users.map((user) => `${user.name} (${user.age})`);
+// }
+// console.log(createArrayOfStrings(users));
+
+// const strings = [
+//   "hi",
+//   "hello",
+//   "good day",
+//   "nice weather",
+//   "very hot summer day",
+//   "cold winter night",
+//   "fast code",
+//   "clean backend architecture",
+//   "learning JavaScript",
+//   "deep dive into algorithms",
+//   "NestJS MongoDB project setup",
+//   "simple task",
+//   "hard interview question",
+//   "junior backend dev",
+//   "build scalable REST API",
+//   "test",
+//   "write clean readable code",
+//   "small bug",
+//   "fix critical production issue",
+//   "done",
+// ];
+
+// function foo(strings) {
+//   const vowels = ["a", "e", "o", "i", "u"];
+//   let moreThanFour = [];
+//   let result = [];
+//   for (let i = 0; i < strings.length; i++) {
+//     let splitedString = strings[i].split(" ");
+//     if (splitedString.length >= 4) {
+//       moreThanFour.push(strings[i]);
+//     }
+//   }
+//   for (let i = 0; i < moreThanFour.length; i++) {
+//     let vowelsCounter = 0;
+//     const text = moreThanFour[i].toLowerCase();
+//     for (let k = 0; k < text.length; k++) {
+//       if (vowels.includes(text[k])) {
+//         vowelsCounter += 1;
+//       }
+//     }
+//     result.push({
+//       text: moreThanFour[i],
+//       vowelsCount: vowelsCounter,
+//     });
+//   }
+//   return result;
+// }
+// console.log(foo(strings));
