@@ -1817,13 +1817,13 @@
 // }
 // console.log(foo(strings));
 
-const texts = [
-  "short text",
-  "this is a longer sentence",
-  "backend development with NestJS",
-  "hi",
-  "clean code principles matter",
-];
+// const texts = [
+//   "short text",
+//   "this is a longer sentence",
+//   "backend development with NestJS",
+//   "hi",
+//   "clean code principles matter",
+// ];
 // ამოცანა:
 
 // ამოიღე სტრინგები, რომლებსაც აქვთ 3 ან მეტი სიტყვა
@@ -1892,3 +1892,54 @@ const texts = [
 //   return ans;
 // }
 // console.log(foo(texts));
+
+// const strings = [
+//   "hi",
+//   "hello",
+//   "good day",
+//   "nice weather",
+//   "very hot summer day",
+//   "cold winter night",
+//   "fast code",
+//   "clean backend architecture",
+//   "learning JavaScript",
+//   "deep dive into algorithms",
+//   "NestJS MongoDB project setup",
+//   "simple task",
+//   "hard interview question",
+//   "junior backend dev",
+//   "build scalable REST API",
+//   "test",
+//   "write clean readable code",
+//   "small bug",
+//   "fix critical production issue and so on",
+//   "done",
+// ];
+
+// function foo(strings) {
+//   let vowels = ["a", "e", "i", "o", "u"];
+//   let answer = [];
+//   let moreThanFourWords = [];
+//   for (let i = 0; i < strings.length; i++) {
+//     if (strings[i].split(" ").length >= 4) {
+//       moreThanFourWords.push(strings[i]);
+//     }
+//   }
+//   for (let i = 0; i < moreThanFourWords.length; i++) {
+//     let vowelsCount = 0;
+//     let eachString = moreThanFourWords[i];
+//     let wordsCount = eachString.split(" ").length;
+//     for (let k = 0; k < eachString.length; k++) {
+//       if (vowels.includes(eachString[k])) {
+//         vowelsCount += 1;
+//       }
+//     }
+//     answer.push({
+//       string: eachString,
+//       words: wordsCount,
+//       vowels: vowelsCount,
+//     });
+//   }
+//   return answer;
+// }
+// console.log(foo(strings));
