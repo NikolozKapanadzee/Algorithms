@@ -1816,3 +1816,79 @@
 //   return result;
 // }
 // console.log(foo(strings));
+
+const texts = [
+  "short text",
+  "this is a longer sentence",
+  "backend development with NestJS",
+  "hi",
+  "clean code principles matter",
+];
+// ამოცანა:
+
+// ამოიღე სტრინგები, რომლებსაც აქვთ 3 ან მეტი სიტყვა
+
+// თითოეულზე დააბრუნე:
+
+// {
+//   text: "...",
+//   wordsCount: number,
+//   charsCount: number // space-ების გარეშე
+// }
+
+// function foo(texts) {
+//   let ans = [];
+//   let moreThanThreeWords = [];
+//   for (let i = 0; i < texts.length; i++) {
+//     if (texts[i].split(" ").length >= 3) {
+//       moreThanThreeWords.push(texts[i]);
+//     }
+//   }
+//   for (let k = 0; k < moreThanThreeWords.length; k++) {
+//     let words = moreThanThreeWords[k].split(" ");
+//     ans.push({
+//       text: words.join(" "),
+//       wordsCount: words.length,
+//       charsCount: words.join("").length,
+//     });
+//   }
+//   return ans;
+// }
+// console.log(foo(texts));
+
+// დატოვე მხოლოდ ის სტრინგები, რომლებიც შეიცავს 4 ან მეტ სიტყვას
+
+// თითოეულ ასეთ სტრინგში დაითვალე ხმოვანი ასოების რაოდენობა
+
+// დააბრუნე მასივი ასეთი ობიექტებით:
+
+// [
+//   { text: "javascript is very powerful", vowels: 9 },
+//   { text: "clean code matters a lot", vowels: 8 }
+// ]
+
+// function foo(texts) {
+//   let ans = [];
+//   let moreThanFourWords = [];
+//   let vowels = ["a", "e", "i", "o", "u"];
+//   for (let i = 0; i < texts.length; i++) {
+//     if (texts[i].split(" ").length >= 4) {
+//       moreThanFourWords.push(texts[i]);
+//     }
+//   }
+//   for (let i = 0; i < moreThanFourWords.length; i++) {
+//     let vowelsCount = 0;
+//     let text = moreThanFourWords[i];
+//     for (let k = 0; k < text.length; k++) {
+//       if (vowels.includes(text[k])) {
+//         vowelsCount += 1;
+//       }
+//     }
+//     ans.push({
+//       string: text,
+//       vowels: vowelsCount,
+//     });
+//   }
+//   return ans;
+// }
+// console.log(foo(texts));
