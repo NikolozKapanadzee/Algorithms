@@ -825,7 +825,7 @@
 //   }
 //   return ans;
 // }
-// console.log(rotateArrayByKSteps([1, 2, 3], 1));
+// console.log(rotateArrayByKSteps([1, 2, 3, 4, 5], 2));
 
 // 54. Check if a Number is Prime
 
@@ -1944,46 +1944,69 @@
 // }
 // console.log(foo(strings));
 
-const strings = [
-  "hello world",
-  "user123 logged in",
-  "error 404 page not found",
-  "version2 release",
-  "clean code",
-  "task 7 completed successfully",
-  "build v3 api service",
-  "no numbers here",
-  "step 1 initialize project",
-  "top10 programming tips",
-  "room 42 is empty",
-  "final result",
-  "3 quick fixes applied",
-  "backend dev level2",
-  "just text",
-];
+// const strings = [
+//   "hello world",
+//   "user123 logged in",
+//   "error 404 page not found",
+//   "version2 release",
+//   "clean code",
+//   "task 7 completed successfully",
+//   "build v3 api service",
+//   "no numbers here",
+//   "step 1 initialize project",
+//   "top10 programming tips",
+//   "room 42 is empty",
+//   "final result",
+//   "3 quick fixes applied",
+//   "backend dev level2",
+//   "just text",
+// ];
 
-function foo(strings) {
-  let onlyWithNumbers = [];
-  let regex = /\d/;
-  let answer = [];
-  for (let i = 0; i < strings.length; i++) {
-    if (regex.test(strings[i])) {
-      onlyWithNumbers.push(strings[i]);
-    }
-  }
-  for (let i = 0; i < onlyWithNumbers.length; i++) {
-    let digitCounter = 0;
-    let eachString = onlyWithNumbers[i];
-    for (let k = 0; k < eachString.length; k++) {
-      if (regex.test(eachString[k])) {
-        digitCounter += 1;
-      }
-    }
-    answer.push({
-      string: eachString,
-      digitCount: digitCounter,
-    });
-  }
-  return answer;
-}
-console.log(foo(strings));
+// function foo(strings) {
+//   let onlyWithNumbers = [];
+//   let regex = /\d/;
+//   let answer = [];
+//   for (let i = 0; i < strings.length; i++) {
+//     if (regex.test(strings[i])) {
+//       onlyWithNumbers.push(strings[i]);
+//     }
+//   }
+//   for (let i = 0; i < onlyWithNumbers.length; i++) {
+//     let digitCounter = 0;
+//     let eachString = onlyWithNumbers[i];
+//     for (let k = 0; k < eachString.length; k++) {
+//       if (regex.test(eachString[k])) {
+//         digitCounter += 1;
+//       }
+//     }
+//     answer.push({
+//       string: eachString,
+//       digitCount: digitCounter,
+//     });
+//   }
+//   return answer;
+// }
+// console.log(foo(strings));
+
+// PROBLEM 2: Find Most Frequent Element
+// Given an array of tags, return the tag that appears most frequently
+// Input: ["javascript", "typescript", "nodejs", "nodejs", "typescript", "nodejs"]
+// Output: "javascript"
+// function findMostFrequent(arr) {
+//   let sortedArray = arr.sort(
+//     (a, b) =>
+//       arr.filter((word) => word === a).length -
+//       arr.filter((word) => word === b).length
+//   );
+//   return sortedArray.pop();
+// }
+// console.log(
+//   findMostFrequent([
+//     "javascript",
+//     "typescript",
+//     "javascript",
+//     "nodejs",
+//     "typescript",
+//     "javascript",
+//   ])
+// );
