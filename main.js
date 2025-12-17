@@ -2010,3 +2010,157 @@
 //     "javascript",
 //   ])
 // );
+
+// const users = [
+//   { name: "Alice", city: "Berlin" },
+//   { name: "Bob", city: "Berlin" },
+//   { name: "Charlie", city: "Paris" },
+//   { name: "David", city: "Paris" },
+//   { name: "Eve", city: "London" },
+// ];
+
+// Group Users by City
+// Given an array of user objects with name and city, return an object where keys are cities and values are arrays of user names in that city.
+
+// function groupUsersByCity(users) {
+//   let ans = {};
+//   for (let i = 0; i < users.length; i++) {
+//     let city = users[i].city;
+//     let name = users[i].name;
+//     if (ans[city]) {
+//       ans[city].push(name);
+//     } else {
+//       ans[city] = [name];
+//     }
+//   }
+//   return ans;
+// }
+// console.log(groupUsersByCity(users));
+
+// const users = [
+//   { name: "Alice", isActive: true },
+//   { name: "Bob", isActive: false },
+//   { name: "Charlie", isActive: true },
+//   { name: "David", isActive: false },
+//   { name: "Eve", isActive: true },
+// ];
+
+// Filter Active Users
+// Given an array of user objects with name and isActive (boolean), return a new array containing only active users.
+
+// function filterActiveUsers(users) {
+//   return users.filter((user) => user.isActive === true);
+// }
+// console.log(filterActiveUsers(users));
+
+// const cart = [
+//   { item: "Shirt", price: 20, quantity: 2 },
+//   { item: "Pants", price: 35, quantity: 1 },
+//   { item: "Hat", price: 10, quantity: 3 },
+// ];
+
+// Shopping Cart Total
+// Given an array of cart items with price and quantity, calculate the total cost of all items.
+
+// function shoppingCartTotal(cart) {
+//   let total = 0;
+//   for (let i = 0; i < cart.length; i++) {
+//     let eachElementTotalPrice = cart[i].price * cart[i].quantity;
+//     total += eachElementTotalPrice;
+//   }
+//   return total;
+// }
+// console.log(shoppingCartTotal(cart));
+
+// const emails = [
+//   "alice@example.com",
+//   "bob@example.com",
+//   "alice@example.com",
+//   "charlie@example.com",
+//   "bob@example.com",
+// ];
+
+// Remove Duplicate Emails
+// Given an array of email strings, return a new array with duplicates removed.
+
+// function removeDuplicateEmails(emails) {
+//   return emails.filter((email, index) => emails.indexOf(email) === index);
+// }
+// console.log(removeDuplicateEmails(emails));
+
+// const users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 17 },
+//   { name: "Charlie", age: 30 },
+//   { name: "David", age: 15 },
+//   { name: "Eve", age: 40 },
+// ];
+// const ageLimit = 18;
+
+// Find Users Over Age
+// Given an array of user objects with name and age, return an array of names of users older than a given age.
+
+// function findUsersOverAge(users, ageLimit) {
+//   let answer = [];
+//   for (let i = 0; i < users.length; i++) {
+//     if (users[i].age > ageLimit) {
+//       answer.push(users[i]);
+//     }
+//   }
+//   return answer;
+// }
+// console.log(findUsersOverAge(users, ageLimit));
+
+// const nestedArrays = [[1, 2], [3, 4, 5], [6], [7, 8]];
+
+// Flatten Nested Arrays
+// Given an array of arrays (e.g., [[1,2],[3,4],[5]]), return a single flat array (e.g., [1,2,3,4,5]).
+
+// function flattenNestedArrays(nestedArrays) {
+//   return nestedArrays.flat();
+// }
+// console.log(flattenNestedArrays(nestedArrays));
+
+// const products = [
+//   { name: "Shirt", sold: 150 },
+//   { name: "Pants", sold: 90 },
+//   { name: "Hat", sold: 200 },
+//   { name: "Shoes", sold: 120 },
+//   { name: "Jacket", sold: 50 },
+// ];
+
+// Top Selling Products
+// Given an array of product objects with name and sold count, return the top 3 best-selling products.
+
+// Count Users per Role
+
+// function topSellingProducts(products) {
+//   let sortedProducts = products.sort((a, b) => b.sold - a.sold);
+//   return sortedProducts.slice(0, 3);
+// }
+// console.log(topSellingProducts(products));
+
+// const users = [
+//   { name: "Alice", role: "admin" },
+//   { name: "Bob", role: "user" },
+//   { name: "Charlie", role: "user" },
+//   { name: "David", role: "admin" },
+//   { name: "Eve", role: "moderator" },
+// ];
+
+// Count Users per Role
+// Given an array of user objects with name and role (admin, user, etc.), return an object showing the number of users for each role.
+
+// function countUsersPerRole(users) {
+//   let ans = {};
+//   for (let i = 0; i < users.length; i++) {
+//     let userRole = users[i].role;
+//     if (ans[userRole]) {
+//       ans[userRole] = ans[userRole] + 1;
+//     } else {
+//       ans[userRole] = 1;
+//     }
+//   }
+//   return ans;
+// }
+// console.log(countUsersPerRole(users));
