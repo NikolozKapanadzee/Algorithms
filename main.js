@@ -2180,3 +2180,41 @@
 //   console.log(2);
 // }
 // foo();
+
+//epam live coding algorithm
+
+// const currencies = [
+//   { currency: "USD", amount: 200, id: 1 },
+//   { currency: "GEL", amount: 100, id: 2 },
+//   { currency: "EUR", amount: 400, id: 3 },
+//   { currency: "USD", amount: 100, id: 4 },
+// ];
+
+//სუფთა ფორით
+// function sumCurrencies(currencies) {
+//   let result = {};
+//   for (let i = 0; i < currencies.length; i++) {
+//     const currency = currencies[i].currency;
+//     const amount = currencies[i].amount;
+//     if (result[currency]) {
+//       result[currency].totalAmount += amount;
+//     } else {
+//       result[currency] = amount;
+//     }
+//   }
+//   return result;
+// }
+// console.log(sumCurrencies(currencies));
+
+// let text = "guja";
+
+// function removeFirstAndLastCharacters(text) {
+//   if (text.length <= 2) {
+//     return " ";
+//   }
+//   let res = text.split("");
+//   res.pop();
+//   res.shift();
+//   return res.join("");
+// }
+// console.log(removeFirstAndLastCharacters(text));
