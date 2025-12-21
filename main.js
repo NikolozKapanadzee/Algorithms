@@ -2164,3 +2164,19 @@
 //   return ans;
 // }
 // console.log(countUsersPerRole(users));
+
+//sleep function
+
+// const sleep = (second) =>
+//   new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve();
+//     }, second * 1000);
+//   });
+
+// async function foo() {
+//   console.log(1);
+//   await sleep(3);
+//   console.log(2);
+// }
+// foo();
