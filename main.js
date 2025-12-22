@@ -2197,7 +2197,7 @@
 //     const currency = currencies[i].currency;
 //     const amount = currencies[i].amount;
 //     if (result[currency]) {
-//       result[currency].totalAmount += amount;
+//       result[currency] += amount;
 //     } else {
 //       result[currency] = amount;
 //     }
@@ -2218,3 +2218,13 @@
 //   return res.join("");
 // }
 // console.log(removeFirstAndLastCharacters(text));
+
+let array1 = [1, 3, 5, 7, 9];
+let array2 = [1, 4, 6, 8, 10];
+function mergeTwoArraysIntoOne(array1, array2) {
+  let mergedAndSortedArray = [...array1, ...array2].sort((a, b) => a - b);
+  return mergedAndSortedArray.filter(
+    (el, index) => mergedAndSortedArray.indexOf(el) == index
+  );
+}
+console.log(mergeTwoArraysIntoOne(array1, array2));
