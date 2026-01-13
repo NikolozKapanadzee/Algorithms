@@ -2219,12 +2219,32 @@
 // }
 // console.log(removeFirstAndLastCharacters(text));
 
-let array1 = [1, 3, 5, 7, 9];
-let array2 = [1, 4, 6, 8, 10];
-function mergeTwoArraysIntoOne(array1, array2) {
-  let mergedAndSortedArray = [...array1, ...array2].sort((a, b) => a - b);
-  return mergedAndSortedArray.filter(
-    (el, index) => mergedAndSortedArray.indexOf(el) == index
-  );
-}
-console.log(mergeTwoArraysIntoOne(array1, array2));
+// let array1 = [1, 3, 5, 7, 9];
+// let array2 = [1, 4, 6, 8, 10];
+// function mergeTwoArraysIntoOne(array1, array2) {
+//   let mergedAndSortedArray = [...array1, ...array2].sort((a, b) => a - b);
+//   return mergedAndSortedArray.filter(
+//     (el, index) => mergedAndSortedArray.indexOf(el) == index
+//   );
+// }
+// console.log(mergeTwoArraysIntoOne(array1, array2));
+
+// Problem:
+// Given an array of integers and a target number, return the indices of two numbers that add up to the target.
+// Example:
+// Input: nums = [2, 7, 11, 15], target = 9
+// Output: [0, 1]
+// Explanation: nums[0] + nums[1] = 2 + 7 = 9
+
+// function twoSum(nums, target) {
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = i + 1; j < nums.length; j++) {
+//       if (nums[i] + nums[j] === target) {
+//         return [i, j];
+//       }
+//     }
+//   }
+//   return [];
+// }
+
+// console.log(twoSum([2, 7, 11, 15], 9));
