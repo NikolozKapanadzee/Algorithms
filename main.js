@@ -2262,3 +2262,10 @@
 // }
 
 // console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+
+// function reverseString(s) {
+//   return s.split("").reverse().join("");
+// }
+
+// console.log(reverseString("hello"));
+// console.log(reverseString("JavaScript"));
