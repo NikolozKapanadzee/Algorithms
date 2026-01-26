@@ -2269,3 +2269,47 @@
 
 // console.log(reverseString("hello"));
 // console.log(reverseString("JavaScript"));
+
+// const obj = { name: "nikoloz" };
+
+// obj.age = 90;
+
+// delete obj.age;
+// delete obj.name;
+
+// console.log(obj);
+
+// const user = {
+//   name: "Nikoloz",
+//   greet() {
+//     console.log(this.name);
+//   },
+// };
+
+// user.greet();
+
+// class Product {
+//   constructor(name, price) {
+//     this.name = name;
+//     this.price = price;
+//   }
+//   displayProductInfo() {
+//     console.log(`Product: ${this.name}`);
+//     console.log(`Price: $${this.price}`);
+//   }
+//   claculateTotal(saltesTax) {
+//     return this.price + this.price * saltesTax;
+//   }
+// }
+// const saltesTax = 0.05;
+
+// const product1 = new Product("shirt", 20.0);
+// const product2 = new Product("pants", 10.0);
+// const product3 = new Product("hat", 5);
+
+// // product1.displayProductInfo();
+// product2.displayProductInfo();
+// // product3.displayProductInfo();
+
+// const total = product2.claculateTotal(saltesTax);
+// console.log(`total price (with tax): ${total}`);
