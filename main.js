@@ -2313,3 +2313,82 @@
 
 // const total = product2.claculateTotal(saltesTax);
 // console.log(`total price (with tax): ${total}`);
+
+// class Animal {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   walk() {
+//     console.log(`this ${this.name} can walk`);
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor(breed, name) {
+//     super(name);
+//     this.breed = breed;
+//   }
+//   hunt() {
+//     console.log(`breed ${this.breed} named ${this.name} hunts very well`);
+//   }
+// }
+
+// const myDog = new Dog("doberman", "tommy");
+// myDog.hunt();
+
+// let obj = {
+//   name: "guja",
+//   lastname: "kupreishvili",
+//   age: 22,
+//   location: "kutaisi",
+//   girlfriend: false,
+// };
+
+// // for (let a in obj) {
+// //   console.log(obj[a]);
+// // }
+
+// console.log(obj.hasOwnProperty("dsad"));
+
+// let name = "guja";
+
+// const obj = {
+//   name: "ნინო",
+//   regularFunc() {
+//     console.log(this.name);
+//   },
+//   arrowFunc: () => {
+//     console.log(this.name);
+//   },
+// };
+// obj.regularFunc();
+// obj.arrowFunc();
+
+// const person = {
+//   greet() {
+//     console.log("გამარჯობა!");
+//   },
+// };
+
+// const student = {
+//   name: "გიორგი",
+// };
+
+// // student-ის prototype-ად ვაყენებთ person-ს
+// Object.setPrototypeOf(student, person);
+
+// student.greet(); // "გამარჯობა!" - მემკვიდრეობით მიღებული მეთოდი
+
+function sortArray(array) {
+  for (let i = 0; i < array.length; i++) {
+    for (let k = i + 1; k < array.length; k++) {
+      if (array[i] > array[k]) {
+        let temp = array[i];
+        array[i] = array[k];
+        array[k] = temp;
+      }
+    }
+  }
+  return array;
+}
+console.log(sortArray([3, 1, 5, 2]));
