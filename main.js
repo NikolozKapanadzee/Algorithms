@@ -2379,16 +2379,16 @@
 
 // student.greet(); // "გამარჯობა!" - მემკვიდრეობით მიღებული მეთოდი
 
-function sortArray(array) {
-  for (let i = 0; i < array.length; i++) {
-    for (let k = i + 1; k < array.length; k++) {
-      if (array[i] > array[k]) {
-        let temp = array[i];
-        array[i] = array[k];
-        array[k] = temp;
-      }
-    }
-  }
-  return array;
-}
-console.log(sortArray([3, 1, 5, 2]));
+// function sortArray(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     for (let k = i + 1; k < array.length; k++) {
+//       if (array[i] > array[k]) {
+//         let temp = array[i];
+//         array[i] = array[k];
+//         array[k] = temp;
+//       }
+//     }
+//   }
+//   return array;
+// }
+// console.log(sortArray([3, 1, 5, 2]));
