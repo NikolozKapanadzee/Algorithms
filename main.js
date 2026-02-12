@@ -2392,3 +2392,16 @@
 //   return array;
 // }
 // console.log(sortArray([3, 1, 5, 2]));
+
+// const obj1 = {
+//   name: "Nika",
+// };
+// console.log(obj1.name, "obj1.name");
+
+// const obj2 = obj1;
+
+// console.log(obj2.name, "obj2.name");
+
+// obj2.name = "Gela";
+
+// console.log(obj1.name);
