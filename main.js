@@ -2793,3 +2793,59 @@
 
 // user1.sayHello();
 // user2.sayHello();
+
+// class Animal {
+//   constructor(name, animal, color, age) {
+//     this.name = name;
+//     this.animal = animal;
+//     this.color = color;
+//     this.age = age;
+//   }
+
+//   sayHello() {
+//     console.log(
+//       `this  ${this.animal} is named ${this.name} and is ${this.color} color`,
+//     );
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor(name, animal, color) {
+//     super(animal, name, color);
+//   }
+// }
+
+// const dog1 = new Dog("Dog", "Jack", "Orange");
+// dog1.sayHello();
+
+// class Cat extends Animal {
+//   constructor(name, animal, color) {
+//     super(animal, name, color);
+//   }
+// }
+
+// const cat1 = new Dog("Cat", "Lusy", "Black");
+// cat1.sayHello();
+
+// class Animal {
+//   _age;
+//   constructor(animal, name, color, age) {
+//     this.animal = animal;
+//     this.name = name;
+//     this.color = color;
+//     this._age = age;
+//   }
+
+//   introduceYourSelf() {
+//     console.log(
+//       `this  ${this.animal} is named ${this.name} and is ${this.color} color`,
+//     );
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor(animal, name, color, age) {
+//     super(animal, name, color, age);
+//   }
+// }
+// const dog1 = new Dog("Dog", "Jack", "Orange", 3);
