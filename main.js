@@ -2849,3 +2849,37 @@
 //   }
 // }
 // const dog1 = new Dog("Dog", "Jack", "Orange", 3);
+
+// let firstName1 = "mari";
+// let firstname2 = firstName1;
+// firstname2 = "guja";
+
+// let obj1 = {
+//   name: "mari",
+// };
+// let obj2 = obj1;
+
+// obj2.name = "guja";
+
+// console.log(firstName1);
+// console.log(firstname2);
+
+// console.log(9007199254740991 + 1);
+// console.log(9007199254740991 + 2);
+
+// const id1 = Symbol("id");
+// console.log(id1);
+
+// const myPromise = new Promise((resolve, reject) => {
+//   const status = false;
+//   if (status) {
+//     resolve("success");
+//   } else {
+//     reject("error");
+//   }
+// });
+
+// myPromise
+//   .then((res) => console.log(res))
+//   .catch((er) => console.log(er))
+//   .finally((el) => console.log("bla"));
