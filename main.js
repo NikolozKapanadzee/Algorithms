@@ -2883,3 +2883,24 @@
 //   .then((res) => console.log(res))
 //   .catch((er) => console.log(er))
 //   .finally((el) => console.log("bla"));
+
+// class Animal {
+//   #breed;
+//   constructor(breed, name) {
+//     this.#breed = breed;
+//     this.name = name;
+//   }
+
+//   sayHello() {
+//     console.log(`hi my breed is ${this.breed} and my name is ${this.name}`);
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor(breed, name) {
+//     super(breed, name);
+//   }
+// }
+
+// const dog1 = new Dog("Doberman", "Lusy");
+// dog1.sayHello();
