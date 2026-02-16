@@ -2904,3 +2904,48 @@
 
 // const dog1 = new Dog("Doberman", "Lusy");
 // dog1.sayHello();
+
+// class Animal {
+//   #name;
+//   constructor(name, age) {
+//     this.#name = name;
+//     this.age = age;
+//   }
+//   sayHello() {
+//     console.log(`hi my name is ${this.name} and i am ${this.age} years old`);
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor(name, age) {
+//     super(name, age);
+//   }
+// }
+
+// const dog1 = new Dog("molly", 50);
+
+// const original = {
+//   name: "Nikoloz",
+//   age: 21,
+//   address: { city: "Tbilisi" },
+// };
+
+// const copy = { ...original };
+
+// copy.address.city = "Kutaisi";
+
+// console.log(original);
+
+// const animal = {
+//   eats: true,
+// };
+
+// const rabbit = {
+//   jumps: true,
+// };
+
+// rabbit.__proto__ = animal;
+
+// console.log(rabbit.jumps); //true
+// console.log(rabbit.eats); //true
+// console.log(rabbit.flies); //false
