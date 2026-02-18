@@ -2949,3 +2949,50 @@
 // console.log(rabbit.jumps); //true
 // console.log(rabbit.eats); //true
 // console.log(rabbit.flies); //false
+
+// function Person(name) {
+//   this.name = name;
+// }
+
+// // Add method to prototype
+// Person.prototype.greet = function () {
+//   console.log(`Hello, I'm ${this.name}`);
+// };
+
+// const john = new Person("John");
+// const jane = new Person("Jane");
+
+// john.greet(); // "Hello, I'm John"
+// jane.greet(); // "Hello, I'm Jane"
+
+// // Both share the same method
+// console.log(john.greet === jane.greet); // true
+
+// const original = {
+//   name: "guja",
+//   age: 5,
+//   address: { city: "Tbilisi" },
+// };
+
+// const copy = JSON.parse(JSON.stringify(original));
+
+// copy.address.city = "Kutaisi";
+
+// console.log(original);
+
+// function Dog(name) {
+//   this.name = name;
+// }
+// Dog.prototype.bark = function () {
+//   console.log(`${this.name} says wooof`);
+// };
+
+// const dog1 = new Dog("Jack");
+// const dog2 = new Dog("Lusy");
+// const dog3 = new Dog("Nick");
+
+// console.log(dog1);
+
+// dog1.bark();
+// dog2.bark();
+// dog3.bark();
