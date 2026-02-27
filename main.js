@@ -2996,3 +2996,27 @@
 // dog1.bark();
 // dog2.bark();
 // dog3.bark();
+
+// const dog = {
+//   eats: true,
+// };
+
+// const cat = {
+//   mews: true,
+// };
+
+// cat.__proto__ = dog;
+
+// console.log(cat.hasOwnProperty("eats"));
+
+// let a = 10;
+// let b = a;
+// b = 20;
+
+// console.log(a); // 10
+
+// let obj1 = { name: "Alexander" };
+// let obj2 = obj1;
+// obj2.name = "Sasha";
+
+// console.log(obj1.name); // Sasha
