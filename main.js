@@ -3020,3 +3020,47 @@
 // obj2.name = "Sasha";
 
 // console.log(obj1.name); // Sasha
+
+// function createCounter() {
+//   let count = 0;
+
+//   return {
+//     increment() {
+//       count++;
+//     },
+//     decrement() {
+//       count--;
+//     },
+//     getCount() {
+//       console.log(count);
+//     },
+//   };
+// }
+
+// const counter = createCounter();
+// counter.increment();
+// counter.increment();
+// counter.getCount();
+
+// function outer() {
+//   let count = 0;
+
+//   return {
+//     increment() {
+//       count++;
+//     },
+//     decrement() {
+//       count--;
+//     },
+//     getCount() {
+//       console.log(count);
+//     },
+//   };
+// }
+
+// const counter = outer();
+
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// counter.getCount();
