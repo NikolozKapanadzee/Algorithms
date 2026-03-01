@@ -3064,3 +3064,108 @@
 // counter.increment();
 // counter.increment();
 // counter.getCount();
+
+// function outer() {
+//   let count = 0;
+
+//   return {
+//     increment() {
+//       count++;
+//     },
+//     decrement() {
+//       count--;
+//     },
+//     getCount() {
+//       return count;
+//     },
+//   };
+// }
+
+// const counter = outer();
+
+// counter.decrement();
+// counter.decrement();
+// counter.decrement();
+// console.log(counter.getCount());
+
+// function outer() {
+//   let count = 0;
+
+//   return {
+//     increment() {
+//       count++;
+//     },
+//     decrement() {
+//       count--;
+//     },
+//     getCount() {
+//       return count;
+//     },
+//   };
+// }
+
+// const counter = outer();
+
+// counter.increment();
+// counter.increment();
+// console.log(counter.getCount());
+
+// class Animal {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor(breed, name, age) {
+//     super(name, age);
+//     this.breed = breed;
+//   }
+// }
+
+// const newDog = new Dog("Doberman", "Lucky", 8);
+
+// console.log(newDog);
+
+// let a = "hello";
+// let b = a;
+// a = "world";
+// console.log(b);
+
+// let obj1 = { name: "guja" };
+// let obj2 = Object.create(obj1);
+
+// console.log(obj1.hasOwnProperty("name"));
+// console.log(obj2.hasOwnProperty("name"));
+// class Animal {
+//   #name;
+//   constructor(name, age) {
+//     this.#name = name;
+//     this.age = age;
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor(breed, name, age) {
+//     super(name, age);
+//     this.breed = breed;
+//   }
+//   sayHello() {
+//     console.log(
+//       `hi i am ${this.breed}, my name is ${this.name}, i am ${this.age} years old`,
+//     );
+//   }
+// }
+
+// const newDog = new Dog("Doberman", "Lucky", 5);
+
+// a();
+// function a() {
+//   console.log("hello");
+// }
+
+// a();
+// const a = function () {
+//   console.log("hello");
+// };
