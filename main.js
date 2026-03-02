@@ -3169,3 +3169,18 @@
 // const a = function () {
 //   console.log("hello");
 // };
+
+// let arr = [1, 2, 3, 4, 5];
+
+// console.log(Array.isArray(arr));
+
+// let guja = null;
+
+// console.log(guja === null);
+// const boxed = new String("hello");
+
+// console.log(typeof boxed);
+
+// const unboxed = boxed.valueOf();
+
+// console.log(typeof unboxed);
