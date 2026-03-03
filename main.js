@@ -3184,3 +3184,24 @@
 // const unboxed = boxed.valueOf();
 
 // console.log(typeof unboxed);
+
+// function outer() {
+//   let count = 0;
+
+//   return {
+//     increment() {
+//       count++;
+//     },
+//     decrement() {
+//       count--;
+//     },
+//     getCount() {
+//       return count;
+//     },
+//   };
+// }
+
+// const counter = outer();
+// counter.increment();
+// counter.increment();
+// console.log(counter.getCount());
