@@ -3205,3 +3205,33 @@
 // counter.increment();
 // counter.increment();
 // console.log(counter.getCount());
+
+// function Dog(name) {
+//   this.name = name;
+// }
+
+// Dog.prototype.bark = function () {
+//   console.log("woof");
+// };
+
+// const rex = new Dog("Rex");
+
+// rex.bark();
+
+// let foo = 10; //amas js kitxulobs rogorc  dabla ro davwer ise
+
+// let foo; //hoisting
+
+// foo = 10; //initialization
+
+function Dog(name) {
+  this.name = name;
+}
+Dog.prototype.bark = function () {
+  console.log("woof");
+};
+
+const dog1 = new Dog("Lucky");
+const dog2 = new Dog("Max");
+
+console.log(dog1.__proto__ === Dog.prototype);
