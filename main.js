@@ -3224,14 +3224,53 @@
 
 // foo = 10; //initialization
 
-function Dog(name) {
-  this.name = name;
-}
-Dog.prototype.bark = function () {
-  console.log("woof");
-};
+// function Dog(name) {
+//   this.name = name;
+// }
+// Dog.prototype.bark = function () {
+//   console.log("woof");
+// };
 
-const dog1 = new Dog("Lucky");
-const dog2 = new Dog("Max");
+// const dog1 = new Dog("Lucky");
+// const dog2 = new Dog("Max");
 
-console.log(dog1.__proto__ === Dog.prototype);
+// console.log(dog1.__proto__ === Dog.prototype);
+
+// let animal = { alive: true };
+
+// let dog = Object.create(animal);
+
+// dog.barks = true;
+
+// console.log(dog.jumps);
+
+// console.log("Script start");
+
+// setTimeout(function timeout() {
+//   console.log("Timeout");
+// }, 0);
+
+// let p = new Promise(function (resolve, reject) {
+//   console.log("Promise creation");
+//   resolve();
+// });
+
+// p.then(function () {
+//   console.log("Promise agregation");
+// });
+
+// console.log("Script end");
+
+// const regex = /hello/;
+// const regex2 = new RegExp("hello");
+
+// console.log(regex);
+// console.log(regex2);
+
+// const err = new Error("something went wrong");
+// console.log(err);
+// console.log(err.message);
+// console.log(err.name);
+
+// const user = null;
+// console.log(user.name);
